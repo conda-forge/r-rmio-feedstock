@@ -26,8 +26,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-bigassertr
+    - r-ff
   run:
     - r-base
+    - r-bigassertr
+    - r-ff
 
 test:
   commands:
