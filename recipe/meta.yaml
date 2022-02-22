@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rmio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rmio/rmio_{{ version }}.tar.gz
-  sha256: 01bc88a98324fb54429d9435fd2680dfa08939281bde90670c322a3e8835cd3e
+  sha256: 1ed6046ee36f34fca5357e0f18ab2f53b9d85032ec2cbcadb9f33a8fa7456dbe
 
 build:
   merge_build_host: true  # [win]
@@ -26,8 +26,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-bigassertr
+    - r-ff
   run:
     - r-base
+    - r-bigassertr
+    - r-ff
 
 test:
   commands:
