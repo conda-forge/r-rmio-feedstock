@@ -1,11 +1,11 @@
-About r-rmio
-============
+About r-rmio-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/privefl/rmio
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides header files of 'mio', a cross-platform C++11 header-only library for memory mapped file IO <https://github.com/mandreyel/mio>.
 
